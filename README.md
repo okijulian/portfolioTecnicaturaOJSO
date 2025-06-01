@@ -1,8 +1,8 @@
-# Portfolio Personal Mejorado - Oscar J. Sosa Ortiz
-
+# Portfolio Personal  - Oscar J. Sosa Ortiz
+# Creada para trabajo practico personal  de Desarrollo de Sistemas Web (Front End) - 2° E
 Este proyecto es la **segunda iteración** de mi portfolio personal, desarrollado como parte de la **Práctica Formativa 2** del curso de desarrollo web. Partiendo de la entrega anterior, se han aplicado mejoras significativas utilizando CSS avanzado para lograr un diseño más profesional, moderno y responsivo.
 
-## Mejoras Implementadas (según Práctica Formativa 2):
+## Mejoras Implementadas ( Práctica Formativa 2):
 
 *   **Mejora de Contenido:**
     *   Se ha mantenido y organizado la descripción personal y de servicios ("Sobre Mí", "Qué Sé Hacer").
@@ -31,17 +31,13 @@ Este proyecto es la **segunda iteración** de mi portfolio personal, desarrollad
     *   CSS separado en bloques lógicos.
     *   Este `README.md` actualizado.
 
-## Puntos de Mejora Anteriores Abordados:
+## Puntos de Mejora  de mi primer entrega:
 
 *   **Centrar contenido correctamente:** Logrado con Flexbox y `margin: auto`.
 *   **Página responsiva:** Implementado.
 *   **Tablas (tarjetas de habilidad) una al lado de la otra:** Logrado con Flexbox, y se apilan en pantallas pequeñas.
 *   **Uso de `div` y etiquetas para reorganizar:** Se ha optimizado el uso de `div`s como contenedores Flex y clases para un mejor control.
 *   **Foto al lado del nombre/descripción:** La foto ahora está al lado del texto en la sección "Sobre Mí" en pantallas grandes (y se apila en móviles).
-
-## Funcionalidad Pendiente:
-
-*   La **funcionalidad del formulario de contacto** (envío de datos) requiere JavaScript y lógica de backend, lo cual está fuera del alcance de esta práctica centrada en CSS.
 
 ## Paleta de Colores:
 
