@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // Voy a suponer que todo está bien al principio.
       let todoCorrecto = true;
       // Y preparo un mensaje por si hay errores.
-      let textoDeError = "¡Ups! Parece que faltó completar algunas cosas:\n";
+      let textoDeError = "Faltaron algunos datos\n";
 
       // ----- Verificación del Nombre -----
       if (nombreIngresado === "") {
         // Si el campo nombre está vacío...
-        textoDeError = textoDeError + "- El Nombre es necesario.\n"; // Añado esto al mensaje de error.
+        textoDeError = textoDeError + "Introduzca  el nombre\n"; // Añado esto al mensaje de error.
         todoCorrecto = false; // Marco que algo no está bien.
         document.getElementById("nombre-form").classList.add("campo-con-error"); // Le pongo una clase para que se vea rojo en la página.
       } else {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // ----- Verificación del Apellido -----
       if (apellidoIngresado === "") {
-        textoDeError += "- El Apellido también.\n"; // Usé += que es lo mismo que textoDeError = textoDeError + ...
+        textoDeError += "introduzca su apellido\n"; // Usé += que es lo mismo que textoDeError = textoDeError + ...
         todoCorrecto = false;
         document
           .getElementById("apellido-form")
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (todoCorrecto) {
         // Si todo está bien, ¡genial! Muestro un mensaje de éxito.
         alert(
-          "¡Mensaje enviado! (Bueno, en realidad esto es una simulación, ¡pero gracias por probar!)\n\n" +
+          "¡Mensaje enviado!\n\n" +
             "Nombre: " +
             nombreIngresado +
             "\n" +
