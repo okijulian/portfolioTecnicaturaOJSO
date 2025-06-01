@@ -1,0 +1,454 @@
+/* /------------------------------------/
+   |          AJUSTES GENERALES         |
+   /------------------------------------/ */
+
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Desplazamiento suave para anclas */
+    font-size: 16px; /* Base para unidades rem */
+  }
+  
+  body {
+    font-family: 'Lato', 'Roboto', sans-serif; /* Fuentes de Google, con fallback */
+    line-height: 1.7;
+    background-color: #1a1a1a; /* Negro/gris muy oscuro */
+    color: #e0e0e0; /* Texto principal gris claro */
+    font-size: 1rem; /* Equivalente a 16px */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #dd1f0ab4; /* Rojo para los títulos */
+    margin-bottom: 0.75em;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  a {
+    color: #dd1f0ab4; /* Rojo para enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease; /* Transición para hover */
+  }
+  
+  a:link { color: #ffffffb4; }
+  a:visited { color: #fa5252b4; } /* Rojo un poco más oscuro para visitados */
+  a:hover {
+    color: #dd1f0ab4; /* Rojo más brillante al pasar el mouse */
+    opacity: 0.8;
+  }
+  a:active { color: #dd1f0ab4; } /* Rojo claro al hacer clic */
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Evita espacio extra debajo de la imagen */
+  }
+  
+  /* Contenedor para centrar contenido y limitar ancho */
+  .contenedor-limitado {
+    width: 90%;
+    max-width: 1100px; /* Ancho máximo del contenido */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* /------------------------------------/
+     |              CABECERA              |
+     /------------------------------------/ */
+  .cabecera-principal {
+    background-color: #2c2c2c; /* Gris oscuro para la cabecera */
+    padding: 1rem 0;
+    border-bottom: 3px solid #dd1f0ab4;
+    position: sticky; /* Para que la cabecera quede fija al hacer scroll */
+    top: 0;
+    z-index: 1000; /* Para que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .contenido-cabecera {
+    display: flex; /* Usamos Flexbox */
+    justify-content: space-between; /* Espacio entre logo/título y nav */
+    align-items: center; /* Alinea verticalmente los ítems */
+  }
+  
+  .logo-y-titulo h1 {
+    margin-bottom: 0.1em;
+    font-size: 1.8rem;
+  }
+  .logo-y-titulo .subtitulo-portfolio {
+    font-size: 0.9rem;
+    color: #bdc3c7; /* Gris claro para el subtitulo */
+    margin-bottom: 0;
+  }
+  
+  .menu-navegacion ul {
+    display: flex; /* Para alinear los li horizontalmente */
+  }
+  
+  .menu-navegacion ul li {
+    margin-left: 1.5rem;
+  }
+  
+  .menu-navegacion ul li a {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5em 0;
+    position: relative; /* Para el efecto de la línea inferior */
+  }
+  
+  /* Efecto de línea inferior en el hover del menú */
+  .menu-navegacion ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f71900b4;
+    transition: width 0.3s ease;
+  }
+  .menu-navegacion ul li a:hover::after {
+    width: 100%;
+  }
+  
+  
+  /* /------------------------------------/
+     |        CONTENIDO PRINCIPAL         |
+     /------------------------------------/ */
+  .contenido-principal {
+    padding-top: 2rem; /* Espacio para que no quede pegado al header */
+  }
+  
+  .contenedor-info {
+    padding: 3rem 0; /* Espaciado vertical para las secciones */
+  }
+  
+  .contenedor-info h2 {
+    text-align: center; /* Centra los títulos de sección */
+    margin-bottom: 2rem;
+  }
+  
+  .fondo-seccion-alterno {
+    background-color: #252525; /* Un gris ligeramente diferente para alternar secciones */
+  }
+  
+  /* /------------------------------------/
+     |            SOBRE MÍ              |
+     /------------------------------------/ */
+  .contenido-sobre-mi {
+    display: flex; /* Flexbox para imagen al lado del texto */
+    align-items: flex-start; /* Alinea al inicio para que el texto no se estire si la imagen es alta */
+    gap: 2rem; /* Espacio entre imagen y texto */
+  }
+  
+  .mi-foto {
+    width: 250px; /* Tamaño fijo para la foto */
+    height: 250px;
+    object-fit: cover; /* Para que la imagen cubra el espacio sin deformarse */
+    border-radius: 50%; /* Foto redonda */
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5); /* Sombra roja sutil */
+  }
+  
+  .texto-sobre-mi {
+    flex: 1; /* El texto ocupa el espacio restante */
+  }
+  .texto-sobre-mi > p { /* Combinador directo para los párrafos directos */
+      color: #cccccc; /* Un gris un poco más claro para el texto de esta sección */
+  }
+  
+  
+  /* /------------------------------------/
+     |          QUÉ SÉ HACER            |
+     /------------------------------------/ */
+  .lista-cosas-que-hago {
+    list-style: none;
+    padding-left: 0;
+    max-width: 700px; /* Limitar ancho de la lista */
+    margin: 0 auto 1.5rem auto; /* Centrar la lista */
+  }
+  
+  .lista-cosas-que-hago li {
+    padding: 0.5em 0;
+    border-bottom: 1px dashed #444; /* Separador sutil */
+  }
+  .lista-cosas-que-hago li:last-child {
+    border-bottom: none;
+  }
+  .lista-cosas-que-hago i {
+    margin-right: 0.75em;
+    color: #e74c3c; /* Iconos en rojo */
+    width: 1.2em; /* Para alinear los textos */
+    text-align: center;
+  }
+  
+  /* /------------------------------------/
+     |           HABILIDADES            |
+     /------------------------------------/ */
+  .tarjetas-habilidades {
+    display: flex; /* Para poner las tarjetas lado a lado */
+    gap: 1.5rem; /* Espacio entre tarjetas */
+    justify-content: space-around; /* Distribuye el espacio */
+    flex-wrap: wrap; /* Permite que las tarjetas pasen abajo si no caben */
+  }
+  
+  .categoria-habilidad {
+    background-color: #2c2c2c; /* Fondo de la tarjeta */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #3f3f3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-basis: 300px; /* Ancho base de cada tarjeta */
+    flex-grow: 1; /* Permite que crezcan para ocupar espacio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para hover */
+  }
+  
+  .categoria-habilidad:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+  }
+  
+  .categoria-habilidad h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5em;
+    font-size: 1.3rem;
+  }
+  .categoria-habilidad h3 i {
+    margin-right: 0.5em;
+  }
+  
+  .categoria-habilidad ul {
+    padding-left: 0;
+  }
+  .categoria-habilidad ul li {
+    padding: 0.4em 0;
+    font-size: 0.95rem;
+  }
+  .categoria-habilidad ul li i {
+    margin-right: 0.6em;
+    color: #bdc3c7; /* Color de iconos dentro de tarjetas */
+    width: 1.1em;
+    text-align: center;
+  }
+  
+  /* Estilo tipo tabla para listas de habilidades (pares/impares) */
+  .categoria-habilidad ul li:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03); /* Fondo muy sutil para filas pares */
+  }
+  .categoria-habilidad ul li:nth-child(odd) {
+    background-color: transparent;
+  }
+  
+  
+  /* /------------------------------------/
+     |             CONTACTO             |
+     /------------------------------------/ */
+  #mi-formulario-de-contacto {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar formulario */
+    background-color: #2c2c2c;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  #mi-formulario-de-contacto div.grupo-formulario { /* Combinador descendiente y de clase */
+      margin-bottom: 1.5rem;
+  }
+  
+  #mi-formulario-de-contacto label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #bdc3c7;
+    font-weight: bold;
+  }
+  
+  #mi-formulario-de-contacto input[type="text"],
+  #mi-formulario-de-contacto input[type="email"],
+  #mi-formulario-de-contacto input[type="tel"],
+  #mi-formulario-de-contacto textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    font-size: 1rem;
+  }
+  #mi-formulario-de-contacto input[type="text"]:focus,
+  #mi-formulario-de-contacto input[type="email"]:focus,
+  #mi-formulario-de-contacto input[type="tel"]:focus,
+  #mi-formulario-de-contacto textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+  }
+  
+  .boton-enviar {
+    display: block; /* Para que ocupe todo el ancho o se pueda centrar con margin */
+    width: auto;
+    padding: 0.8em 1.5em;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 1rem auto 0 auto; /* Centrar si es display block y width auto */
+  }
+  .boton-enviar i {
+    margin-right: 0.5em;
+  }
+  .boton-enviar:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el mouse */
+    transform: scale(1.02); /* Pequeño efecto de escala */
+  }
+  .boton-enviar:active {
+    transform: scale(0.98); /* Efecto al presionar */
+  }
+  
+  /* /------------------------------------/
+     |           PIE DE PÁGINA          |
+     /------------------------------------/ */
+  .pie-de-pagina {
+    background-color: #222; /* Gris más oscuro para el footer */
+    color: #95a5a6; /* Color de texto del footer */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem; /* Espacio antes del footer */
+    font-size: 0.9rem;
+    border-top: 3px solid #333;
+  }
+  .pie-de-pagina p {
+    margin-bottom: 0.5em;
+  }
+  .pie-de-pagina .fa-heart {
+    color: #e74c3c; /* Corazón en rojo */
+  }
+  
+  
+  /* /------------------------------------/
+     |           RESPONSIVIDAD          |
+     /------------------------------------/ */
+  
+  /* Tablet horizontal y pantallas medianas (hasta 1080px) */
+  @media (max-width: 1080px) {
+    html {
+      font-size: 15px; /* Reducir ligeramente la base de fuente */
+    }
+    .logo-y-titulo h1 {
+      font-size: 1.6rem;
+    }
+    .contenido-sobre-mi {
+      flex-direction: column; /* Apilar imagen y texto */
+      align-items: center; /* Centrar la imagen */
+      text-align: center;
+    }
+    .mi-foto {
+      margin-bottom: 1.5rem;
+      width: 200px;
+      height: 200px;
+    }
+    .tarjetas-habilidades {
+      gap: 1rem;
+    }
+    .categoria-habilidad {
+      flex-basis: calc(50% - 1rem); /* Dos tarjetas por fila */
+    }
+  }
+  
+  /* Tablet vertical (hasta 768px) */
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    .contenido-cabecera {
+      flex-direction: column; /* Apilar logo y nav */
+      text-align: center;
+    }
+    .logo-y-titulo {
+      margin-bottom: 1rem;
+    }
+    .menu-navegacion ul {
+      flex-direction: column; /* Apilar ítems del menú */
+      align-items: center;
+    }
+    .menu-navegacion ul li {
+      margin-left: 0;
+      margin-bottom: 0.5rem;
+    }
+    .menu-navegacion ul li a::after { /* Ocultar efecto de línea si el menú es vertical */
+      display: none;
+    }
+  
+    .categoria-habilidad {
+       /* Una tarjeta por fila */
+      flex-basis: calc(80% - 1rem);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* Móvil grande (hasta 480px) */
+  @media (max-width: 480px) {
+    .logo-y-titulo h1 {
+      font-size: 1.4rem;
+    }
+    .logo-y-titulo .subtitulo-portfolio {
+      font-size: 0.8rem;
+    }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+  
+    .contenedor-info {
+      padding: 2rem 0;
+    }
+    .mi-foto {
+      width: 150px;
+      height: 150px;
+    }
+    #mi-formulario-de-contacto {
+      padding: 1.5rem;
+    }
+    .categoria-habilidad {
+      flex-basis: 100%; /* Asegurar una tarjeta por fila */
+    }
+    .pie-de-pagina {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Móvil pequeño (hasta 375px) */
+  @media (max-width: 375px) {
+    html {
+      font-size: 13px; /* Aún más pequeño para móviles muy chicos */
+    }
+     .logo-y-titulo h1 {
+      font-size: 1.3rem;
+    }
+    .contenedor-limitado {
+      width: 95%; /* Más ancho relativo en pantallas pequeñas */
+    }
+    .boton-enviar {
+      font-size: 1rem;
+      padding: 0.7em 1.2em;
+    }
+  }

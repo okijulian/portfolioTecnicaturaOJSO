@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio - Oscar J. Sosa Ortiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="cabecera-principal">
+      <div class="contenedor-limitado contenido-cabecera">
+        <div class="logo-y-titulo">
+          <h1 id="titulo-pagina">Oscar J. Sosa Ortiz</h1>
+          <p class="subtitulo-portfolio">Desarrollador Backend C#</p>
+        </div>
+        <nav class="menu-navegacion">
+          <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#que-se-hacer">Qué Sé Hacer</a></li>
+            <li><a href="#habilidades">Mis Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenido-principal">
+      <section id="sobre-mi" class="contenedor-info fondo-seccion-alterno">
+        <div class="contenedor-limitado contenido-sobre-mi">
+          <img
+            class="mi-foto"
+            src="img/fotoPortfolio.jpg"
+            alt="Mi foto para el portfolio"
+          />
+          <div class="texto-sobre-mi">
+            <h2>Un Poco Sobre Mí</h2>
+            <p>
+              ¡Hola! Bienvenidos a mi espacio. Soy Oscar, un entusiasta de la
+              programación, especialmente del mundo .NET. Me gusta crear tanto
+              para la web como aplicaciones de escritorio.
+            </p>
+            <p>
+              Todo empezó en la pandemia, vi una oportunidad para aprender cosas
+              nuevas y me metí de lleno con .NET y otros lenguajes.
+            </p>
+            <p>
+              Empecé jugando con HTML y CSS, luego me pasé a Java, Python y
+              Django, pero siempre me gustó más el backend. Con .NET aprendí
+              mucho sobre cómo funcionan las cosas "por detrás", usando
+              herramientas como Entity Framework, Dapper y bases de datos SQL
+              Server.
+            </p>
+            <p>
+              Quiero seguir aprendiendo y mejorando, ¡listo para nuevos desafíos
+              y proyectos interesantes!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="que-se-hacer" class="contenedor-info">
+        <div class="contenedor-limitado">
+          <h2>Qué Sé Hacer</h2>
+          <p>Ahora mismo estoy practicando y mejorando en estas áreas:</p>
+          <ul class="lista-cosas-que-hago">
+            <li>
+              <i class="fas fa-code"></i> Crear APIs con ASP.NET Core (para que
+              las aplicaciones se comuniquen).
+            </li>
+            <li>
+              <i class="fas fa-database"></i> Trabajar con bases de datos usando
+              Entity Framework y Dapper.
+            </li>
+            <li>
+              <i class="fas fa-server"></i> Diseñar y usar bases de datos SQL
+              Server.
+            </li>
+            <li>
+              <i class="fas fa-lightbulb"></i> Intentar escribir código ordenado
+              y que se entienda.
+            </li>
+            <li>
+              <i class="fab fa-git-alt"></i> Usar Git para guardar versiones de
+              mi código (y GitHub para compartirlo).
+            </li>
+            <li>
+              <i class="fas fa-desktop"></i> También tengo experiencia creando
+              programas para computadoras con Delphi.
+            </li>
+          </ul>
+          <p>
+            Y estoy aprendiendo HTML, CSS y JavaScript para entender también
+            cómo se hacen las partes visuales de las webs.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="habilidades"
+        class="contenedor-info fondo-seccion-alterno seccion-de-habilidades"
+      >
+        <div class="contenedor-limitado">
+          <h2>Mis Habilidades y Conocimientos</h2>
+          <div class="tarjetas-habilidades">
+            <div class="categoria-habilidad">
+              <h3><i class="fas fa-cogs"></i> LO QUE YA SÉ</h3>
+              <ul>
+                <li>
+                  <i class="fab fa-microsoft"></i> .NET (ASP.NET Core, .NET
+                  Framework)
+                </li>
+                <li><i class="fab fa-java"></i> JAVA</li>
+                <li><i class="fab fa-python"></i> Python (con Django)</li>
+                <li><i class="fas fa-database"></i> Entity Framework</li>
+                <li><i class="fas fa-database"></i> Dapper</li>
+                <li><i class="fas fa-database"></i> SQL Server</li>
+                <li>
+                  <i class="fab fa-git-alt"></i> Git /
+                  <i class="fab fa-github"></i> GitHub
+                </li>
+                <li><i class="fas fa-laptop-code"></i> DELPHI</li>
+              </ul>
+            </div>
+
+            <div class="categoria-habilidad">
+              <h3><i class="fas fa-graduation-cap"></i> ESTOY APRENDIENDO</h3>
+              <ul>
+                <li><i class="fab fa-html5"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+                <li><i class="fab fa-aws"></i> AWS (lo básico)</li>
+              </ul>
+            </div>
+
+            <div class="categoria-habilidad">
+              <h3><i class="fas fa-gamepad"></i> MIS PASATIEMPOS</h3>
+              <ul>
+                <li><i class="fas fa-headset"></i> Jugar videojuegos</li>
+                <li><i class="fas fa-film"></i> Ver series y películas</li>
+                <li><i class="fas fa-walking"></i> Salir a caminar</li>
+                <li><i class="fas fa-mug-hot"></i> Tomar mate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contenedor-info">
+        <div class="contenedor-limitado">
+          <h2>¿Quieres Contactarme?</h2>
+          <form id="mi-formulario-de-contacto">
+            <div class="grupo-formulario">
+              <label for="nombre-form">Nombre:</label>
+              <input type="text" id="nombre-form" name="nombre" required />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="apellido-form">Apellido:</label>
+              <input type="text" id="apellido-form" name="apellido" required />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="email-form">Email:</label>
+              <input type="email" id="email-form" name="email" required />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="telefono-form">Teléfono (opcional):</label>
+              <input type="tel" id="telefono-form" name="telefono" />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="mensaje-form">Tu Mensaje:</label>
+              <textarea
+                id="mensaje-form"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="boton-enviar">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie-de-pagina">
+      <div class="contenedor-limitado">
+        <p>
+          Puedes ver mis proyectos en
+          <a
+            href="https://github.com/okijulian"
+            target="_blank"
+            rel="noopener noreferrer"
+            >mi GitHub</a
+          >.
+        </p>
+        <p>© 2024 Oscar J. Sosa Ortiz.</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
