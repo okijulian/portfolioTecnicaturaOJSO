@@ -52,4 +52,7 @@ Se ha optado por un tema oscuro para reducir la fatiga visual y dar un aspecto m
 
 ---
 
-![Capturas de pantalla del portfolio](img/sobremi.png) (img/queSeHacer.png)(img/habilidades.png)(img/contacto.png)
+![Capturas de pantalla del portfolio](img/sobremi.png) 
+![Capturas de pantalla del portfolio](img/queSeHacer.png)
+![Capturas de pantalla del portfolio](img/habilidades.png)
+![Capturas de pantalla del portfolio](img/contacto.png)
