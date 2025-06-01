@@ -2,6 +2,14 @@
 # Creada para trabajo practico personal  de Desarrollo de Sistemas Web (Front End) - 2° E
 Este proyecto es la **segunda iteración** de mi portfolio personal, desarrollado como parte de la **Práctica Formativa 2** del curso de desarrollo web. Partiendo de la entrega anterior, se han aplicado mejoras significativas utilizando CSS avanzado para lograr un diseño más profesional, moderno y responsivo.
 
+
+## 🚀 Demo en Vivo
+
+Puedes acceder y probar la versión desplegada de este portfolio en GitHub Pages a través del siguiente enlace:
+
+[Acceder al Portfolio en Vivo](https://okijulian.github.io/portfolioTecnicaturaOJSO/)
+
+
 ## Mejoras Implementadas ( Práctica Formativa 2):
 
 *   **Mejora de Contenido:**
